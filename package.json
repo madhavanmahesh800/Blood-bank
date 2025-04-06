@@ -1,0 +1,28 @@
+{
+  "name": "blood-bank-management-system",
+  "version": "1.0.0",
+  "description": "Blood Bank Management System with frontend and backend",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "start:backend": "cd blood-bank-system && npm start",
+    "start:frontend": "cd blood-bank-frontend && npm start",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run start:frontend\"",
+    "dev:backend": "cd blood-bank-system && npm run dev",
+    "install:all": "concurrently \"npm run install:backend\" \"npm run install:frontend\"",
+    "install:backend": "cd blood-bank-system && npm install",
+    "install:frontend": "cd blood-bank-frontend && npm install"
+  },
+  "keywords": [
+    "blood-bank",
+    "management",
+    "react",
+    "nodejs",
+    "mongodb"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
